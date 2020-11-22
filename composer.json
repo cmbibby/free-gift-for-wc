@@ -1,0 +1,16 @@
+{
+    "name": "cmbibby/free-gift-for-wc",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "Chris Bibby",
+            "email": "cmbibby@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload" : {
+      "psr-4" : {
+        "Free_Gift_WC\\" : "inc/"
+      }
+    }
+}
