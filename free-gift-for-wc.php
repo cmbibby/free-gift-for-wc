@@ -8,6 +8,8 @@
  * Domain Path:     /languages
  * Version:         1.0.0
  * GitHub Plugin URI: git@github.com:cmbibby/free-gift-for-wc.git
+ * WC requires at least: 3.5.0
+ * WC tested up to: 4.7.0
  *
  * @package         Free_Gift_For_Wc
  */
