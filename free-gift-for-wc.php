@@ -7,6 +7,7 @@
  * Text Domain:     free-gift-for-wc
  * Domain Path:     /languages
  * Version:         1.0.0
+ * GitHub Plugin URI: git@github.com:cmbibby/free-gift-for-wc.git
  *
  * @package         Free_Gift_For_Wc
  */
