@@ -35,12 +35,10 @@ class Settings {
 				),
 				array(
 					'title'    => __( 'Free Product', 'free-gift-for-wc' ),
-					'type'     => 'number',
+					'type'     => 'select',
 					'desc_tip' => __( 'The Product ID of the gift product', 'free-gift-for-wc' ),
-					'default'  => 0,
 					'id'       => 'wc_free_gift_product_id',
-					'css'      => 'height:100px;',
-					'css'      => 'width:100px;',
+					'options'  => $this->get_products(),
 				),
 				array(
 					'title'    => __( 'Cart Subtotal Value', 'free-gift-for-wc' ),
@@ -84,5 +82,22 @@ class Settings {
 	}
 	public static function get_free_gift_amount() {
 		return get_option( 'wc_free_gift_cart_amount' );
+	}
+
+	protected function get_products() {
+		$args = array(
+			'status' => 'publish',
+			'limit'  => 300,
+		);
+
+		$products = \wc_get_products( $args );
+
+		$product_array = [];
+
+		foreach ( $products as $product ) {
+
+			$product_array[ $product->get_id() ] = $product->get_name();
+		}
+		return $product_array;
 	}
 }
