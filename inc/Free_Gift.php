@@ -1,14 +1,19 @@
 <?php
+
 /**
  * Free gift logic modified from here https://stackoverflow.com/questions/64872198/add-free-gifted-product-for-a-minimal-cart-amount-in-woocommerce
  *
  */
+
 namespace Free_Gift_WC;
 
 class Free_Gift
 {
 	public function __construct()
 	{
+
+		// check the user role is allowed a free gift
+
 		add_action('woocommerce_before_calculate_totals', array($this, 'maybe_add_free_gift'));
 		add_filter('woocommerce_cart_item_price', array($this, 'change_minicart_free_gifted_item_price'), 10, 3);
 	}
@@ -17,8 +22,10 @@ class Free_Gift
 
 	function maybe_add_free_gift($cart)
 	{
-		if (is_admin() && !defined('DOING_AJAX'))
+		if (is_admin() && !defined('DOING_AJAX')) {
 			return;
+		}
+
 
 		// Settings
 		$free_product_id   = Settings::get_product_id();
@@ -34,7 +41,7 @@ class Free_Gift
 				$free_qty = $cart_item['quantity'];
 				$cart_item['data']->set_price(0); // Optionally set the price to zero
 			} else {
-				if(key_exists('line_total', $cart_item) && key_exists('line_tax', $cart_item)){
+				if (key_exists('line_total', $cart_item) && key_exists('line_tax', $cart_item)) {
 					$cart_subtotal += $cart_item['line_total'] + $cart_item['line_tax'];
 				}
 			}

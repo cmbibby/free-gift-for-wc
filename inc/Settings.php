@@ -53,6 +53,13 @@ Class Settings{
 					'css'      => 'height:100px;',
 					'css'      => 'width:100px;',
 				),
+				array(
+					'title' => 'Excluded roles',
+					'type' => 'multiselect',
+					'desc_tip' => 'Don\'t allow these roles to get a free gift',
+					'id' => 'wc_free_gift_excluded_roles',
+					'options' => $this->get_user_roles(),
+				),
 
 				'section_end' => array(
 					'type' => 'sectionend',
@@ -65,10 +72,18 @@ Class Settings{
 		}
 	}
 
+	protected function get_user_roles(){
+		$roles = new \WP_Roles;
+		return $roles->get_names();
+	}
+
 	public static function get_product_id(){
 		return get_option('wc_free_gift_product_id');
 	}
 
+	public static function get_excluded_roles(){
+		return get_option('wc_free_gift_excluded_roles');
+	}
 	public static function get_free_gift_amount(){
 		return get_option('wc_free_gift_cart_amount');
 	}
