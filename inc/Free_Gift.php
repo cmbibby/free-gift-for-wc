@@ -34,7 +34,9 @@ class Free_Gift
 				$free_qty = $cart_item['quantity'];
 				$cart_item['data']->set_price(0); // Optionally set the price to zero
 			} else {
-				$cart_subtotal += $cart_item['line_total'] + $cart_item['line_tax'];
+				if(key_exists('line_total', $cart_item) && key_exists('line_tax', $cart_item)){
+					$cart_subtotal += $cart_item['line_total'] + $cart_item['line_tax'];
+				}
 			}
 		}
 
