@@ -46,8 +46,6 @@ class Settings {
 					'desc_tip' => __( 'The value above to apply the free gift', 'free-gift-for-wc' ),
 					'default'  => 0,
 					'id'       => 'wc_free_gift_cart_amount',
-					'css'      => 'height:100px;',
-					'css'      => 'width:100px;',
 				),
 				array(
 					'title'    => 'Excluded roles',
@@ -87,7 +85,7 @@ class Settings {
 	protected function get_products() {
 		$args = array(
 			'status' => 'publish',
-			'limit'  => 300,
+			'limit'  => 999,
 		);
 
 		$products = \wc_get_products( $args );
