@@ -1,0 +1,77 @@
+# Copyright (C) 2020 Chris Bibby
+# This file is distributed under the same license as the Free Gift For WC package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Free Gift For WC 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/free-gift-for-wc\n"
+"POT-Creation-Date: 2020-11-27 10:45:17+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2020-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#: inc/Settings.php:13 inc/Settings.php:22
+msgid "Free Gift Product"
+msgstr ""
+
+#: inc/Settings.php:24
+msgid "Add a free gift in cart over a certain spend"
+msgstr ""
+
+#: inc/Settings.php:29
+msgid "Enable"
+msgstr ""
+
+#: inc/Settings.php:30
+msgid "Enable free gift in cart"
+msgstr ""
+
+#: inc/Settings.php:37
+msgid "Free Product"
+msgstr ""
+
+#: inc/Settings.php:39
+msgid "The Product ID of the gift product"
+msgstr ""
+
+#: inc/Settings.php:46
+msgid "Cart Subtotal Value"
+msgstr ""
+
+#: inc/Settings.php:48
+msgid "The value above to apply the free gift"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Free Gift For WC"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "cmbibby/free-gift-for-wc"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Add a Free Gift to Cart"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Chris Bibby"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://chrisbibby.com.au"
+msgstr ""
