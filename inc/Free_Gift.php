@@ -1,6 +1,6 @@
 <?php
 /**
- * Free gift logic from here https://stackoverflow.com/questions/64872198/add-free-gifted-product-for-a-minimal-cart-amount-in-woocommerce
+ * Free gift logic modified from here https://stackoverflow.com/questions/64872198/add-free-gifted-product-for-a-minimal-cart-amount-in-woocommerce
  *
  */
 namespace Free_Gift_WC;
