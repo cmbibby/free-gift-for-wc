@@ -6,7 +6,7 @@
  * Author URI:      https://chrisbibby.com.au
  * Text Domain:     free-gift-for-wc
  * Domain Path:     /languages
- * Version:         1.0.0
+ * Version:         1.1.0
  * GitHub Plugin URI: cmbibby/free-gift-for-wc
  * WC requires at least: 3.5.0
  * WC tested up to: 4.7.0
@@ -17,7 +17,7 @@
 // Your code starts here.
 
 namespace Free_Gift_WC;
-require_once(__DIR__) . '/vendor/autoload.php';
+require_once( __DIR__ ) . '/vendor/autoload.php';
 class Loader {
 
 	protected static $dir_path       = '';
@@ -37,7 +37,10 @@ class Loader {
 	}
 }
 
-add_action('plugins_loaded', function(){
+add_action(
+	'plugins_loaded',
+	function() {
 	new Loader;
-});
+}
+	);
 
