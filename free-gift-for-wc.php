@@ -6,7 +6,7 @@
  * Author URI:      https://chrisbibby.com.au
  * Text Domain:     free-gift-for-wc
  * Domain Path:     /languages
- * Version:         1.1.0
+ * Version:         1.1.1
  * GitHub Plugin URI: cmbibby/free-gift-for-wc
  * WC requires at least: 3.5.0
  * WC tested up to: 4.7.0
