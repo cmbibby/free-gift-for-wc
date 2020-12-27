@@ -38,6 +38,7 @@ class Settings {
 					'type'     => 'select',
 					'desc_tip' => __( 'The Product ID of the gift product', 'free-gift-for-wc' ),
 					'id'       => 'wc_free_gift_product_id',
+					'class'    => 'wc-enhanced-select',
 					'options'  => $this->get_products(),
 				),
 				array(
@@ -53,6 +54,7 @@ class Settings {
 					'desc_tip' => 'Don\'t allow these roles to get a free gift',
 					'id'       => 'wc_free_gift_excluded_roles',
 					'options'  => $this->get_user_roles(),
+					'class'    => 'wc-enhanced-select',
 				),
 
 				'section_end' => array(
