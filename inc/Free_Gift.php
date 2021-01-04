@@ -59,7 +59,7 @@ class Free_Gift {
 	// Display free gifted product price to zero on minicart
 
 	public function change_minicart_free_gifted_item_price( $price_html, $cart_item, $cart_item_key ) {
-		$free_product_id = 27;
+		$free_product_id = Settings::get_product_id();
 
 		if ( $cart_item['product_id'] == $free_product_id ) {
 			return wc_price( 0 );
