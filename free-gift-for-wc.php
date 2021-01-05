@@ -6,7 +6,7 @@
  * Author URI:      https://chrisbibby.com.au
  * Text Domain:     free-gift-for-wc
  * Domain Path:     /languages
- * Version:         1.1.2
+ * Version:         1.1.3
  * GitHub Plugin URI: cmbibby/free-gift-for-wc
  * WC requires at least: 3.5.0
  * WC tested up to: 4.7.0
@@ -21,7 +21,7 @@ require_once( __DIR__ ) . '/vendor/autoload.php';
 class Loader {
 
 	protected static $dir_path       = '';
-	protected static $plugin_version = '1.0.0';
+	protected static $plugin_version = '1.1.3';
 
 	public function __construct() {
 		 self::$dir_path = plugin_dir_url( __FILE__ );
