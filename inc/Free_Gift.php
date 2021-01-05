@@ -45,6 +45,7 @@ class Free_Gift {
 		// If subtotal match and free product is not already in cart, add it
 		if ( ! isset( $free_key ) && $cart_subtotal >= $targeted_subtotal ) {
 			$cart->add_to_cart( $free_product_id );
+			wc_add_notice( __( 'Your free gift has been added to the cart!' ), 'notice' );
 		}
 		// If subtotal doesn't match and free product is already in cart, remove it
 		elseif ( isset( $free_key ) && $cart_subtotal < $targeted_subtotal ) {
