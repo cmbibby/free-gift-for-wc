@@ -21,7 +21,7 @@ require_once( __DIR__ ) . '/vendor/autoload.php';
 class Loader {
 
 	protected static $dir_path       = '';
-	protected static $plugin_version = '1.1.3';
+	protected static $plugin_version = '1.1.4';
 
 	public function __construct() {
 		 self::$dir_path = plugin_dir_url( __FILE__ );
