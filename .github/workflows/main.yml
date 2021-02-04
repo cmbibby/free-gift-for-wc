@@ -14,8 +14,9 @@
 # - Upload the .zip file as a release, for download
 name: Generate Installable Plugin, and Upload as Release Asset
 on:
-  release:
-    types: [published]
+  push:
+    branches:
+      - master
 jobs:
   build:
     name: Upload Release Asset
