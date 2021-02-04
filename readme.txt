@@ -16,5 +16,9 @@ Settings in WooCommerce -> Settings -> Products
 
 == Changelog ==
 
+= 1.1.6 =
+
+* Exclude roles
+
 = 1.0 =
 * Initial
